@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="/assets/bannerCatalogo.png" alt="Logo-Barberia"  class="imglogo"></h1> 
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/CatalogoBarberia/productos.html">Productos</a>
+            <a href="/CatalogoBarberia/contactos.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="main_contacto">
+        <form action="">
+            <div>
+                <label for="nombreApellido">Nombre y apellido : </label>
+                <input type="text" id="nombreApellido" required >
+            </div>
+            <div>
+                <label for="correoElectronico">Correo Electronico : </label>
+                <input type="email" id="correoElectronico" required placeholder="   email@dominio.com">
+            </div>
+            <div>
+                <label for="telefono">Telefono : </label>
+                <input type="tel" name="number" id="Telefono" required placeholder="    (xx)xxxxxxxxx">
+            </div>
+            <div>
+                <label for="Mensaje">Mensaje :</label>
+                <textarea name="Mensaje" id="Mensaje" cols="60" rows="10" required placeholder=" Sea serio por favor"></textarea >
+            </div>
+            <div class="fieldset">
+                    <fieldset class="radio">
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                        <div>
+                            <div>
+                                <label for="radio-email">Email :</label>
+                                <input type="radio"value="email" id="radio-email" name="Contacto" required>
+                            </div>
+                            <div>
+                                <label for="radio-Teléfono">Teléfono :</label>
+                                <input type="radio"value="Teléfono" id="radio-Teléfono" name="Contacto">
+                            </div>
+                            <div>
+                                <label for="radio-WhatsApp">WhatsApp :</label>
+                                <input type="radio"value="WhatsApp" id="radio-WhatsApp" name="Contacto">
+                            </div>
+                        </div>
+                        <div class="correoInformativo">
+                            <label for="">¿Le gustaria recibir correo informativo?</label>
+                            <input type="checkbox">
+                        </div>
+                        <div class="select">
+                            <p>¿En cúal horario prefiere ser atendido?</p>
+                            <select name="" id="">
+                                <option value="">Mañana</option>
+                                <option value="">Tarde</option>
+                                <option value="">Noche</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Enviar Formulario" class="enviar">
+                </fieldset>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>lunes</td>
+                            <td>08h~20h</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>08~20h</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08h~20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footerImg">
+            <img src="/assets/footerImg1.png" alt="">
+            <p> &copy Copyright Barberia Alura-Erick</p>
+        </div>
+    </footer>
+</body>
+</html>
